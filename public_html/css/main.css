@@ -10,7 +10,8 @@
     margin-bottom: 0px;
     /* background: transparent; */
     /* background-size: cover; */
-    background:  url('img/verduras.jpg');
+    background-image: url(../img/descarga.jpeg);
+    background-repeat: no-repeat;
 }
 
 a{
