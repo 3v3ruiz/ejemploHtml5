@@ -3,9 +3,14 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-.jumbotron{
+
+
+.jumbotron {
     text-align: center;
-    margin-bottom: 0px
+    margin-bottom: 0px;
+    /* background: transparent; */
+    /* background-size: cover; */
+    background:  url('img/verduras.jpg');
 }
 
 a{
