@@ -16,7 +16,7 @@
 
 a{
     color: whitesmoke;
-    
+        
 }
 
 .sidebar {
@@ -40,4 +40,9 @@ a{
     line-height: 1.5;
     color: #747474;
     text-align: center;
+}
+
+.nav-tabs.nav-justified > li > a {
+  margin-right: 0;
+  border-radius: 0px 0px 0 0;
 }
