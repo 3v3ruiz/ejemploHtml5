@@ -1,9 +1,10 @@
+h1 a{
+    color: black;    
+}
 
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
+a.nounderline:link   {   
+    text-decoration:none;   
+}
 
 .jumbotron {
     text-align: center;
@@ -19,7 +20,7 @@ a{
     
 }
 .nav{
-    background-color: #96CA85;
+    background-color: #F95763;
     font-size: 2rem;
 }
 
