@@ -53,58 +53,37 @@ a{
     text-align: center;
 }
 
-.active{
-    border-radius:0px;
-}
 .nav{
     background-color: GoldenRod ; 
     font-size: 2rem;
 }
+			
+ul, ol {
+        list-style:none;
+}
 
-	
-			
-			
 
-			
-			ul, ol {
-				list-style:none;
-			}
-			
-			.nav > li {
-				float:left;
-			}
-			
-			.nav li a {
-				background-color:GoldenRod;
-				color:#fff;
-				text-decoration:none;
-				padding:10px 12px;
-				display:block;
-			}
-			
-			.nav li a:hover {
-				background-color:red;
-			}
-			
-			.nav li ul {
-				display:none;
-				position:absolute;
-				min-width:33%;
-			}
-			
-			.nav li:hover > ul {
-				display:block;
-			}
-			
-			.nav li ul li {
-				position:relative;
-			}
-			
-			.nav li ul li ul {
-				right:-140px;
-				top:0px;
-			}
-			.desplegable {
-				margin:0px;
-				padding:2px;
-			}
+.nav li a {
+        background-color:GoldenRod;
+        color:#fff;
+        text-decoration:none;
+        padding:10px 12px;
+        display:block;
+        text-align: center;
+}
+
+.nav li a:hover {
+        background-color:whitesmoke;
+        color: grey;
+}
+
+.nav li ul {
+        display:none;
+        position:absolute;
+        width:100%;
+        margin-left: 0px;
+}
+
+.nav li:hover > ul {
+        display:block;
+}
