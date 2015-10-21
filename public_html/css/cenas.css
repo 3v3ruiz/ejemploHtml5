@@ -61,8 +61,11 @@ a{
     font-size: 2rem;
 }
 
-	
-			
+//quitar sombra de los nav	
+.nav-tabs.nav-justified > li > a {
+  margin-right: 0;
+  border-radius: 0px 0px 0 0;
+}			
 			
 
 			
