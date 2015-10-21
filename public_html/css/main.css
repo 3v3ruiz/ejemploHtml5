@@ -4,6 +4,14 @@
    Author's custom styles
    ========================================================================== */
 
+h1 a{
+    color: black; 
+    
+}
+
+a.nounderline:link   {   
+    text-decoration:none;   
+}
 
 .jumbotron {
     text-align: center;
@@ -17,10 +25,6 @@
 a{
     color: whitesmoke;
         
-}
-.nav{
-    background-color: #96CA85;
-    font-size: 2rem;
 }
 .nav{
     background-color: #96CA85;
@@ -57,4 +61,40 @@ a{
 .nav-tabs.nav-justified > li > a {
   margin-right: 0;
   border-radius: 0px 0px 0 0;
+  border-color: white;
+}
+
+ol, ul {
+     list-style: none
+}
+
+
+.nav li a:hover {
+        background-color:whitesmoke;
+        color: grey;
+        
+}
+
+.nav li ul {
+        display:none;
+        position:absolute;
+        width:100%;
+        padding: 2px;
+        margin-left: 0px;
+        margin-right: 0px;
+        
+}
+
+.nav li:hover > ul {
+        display:block;
+}
+
+.nav li a {
+    background-color:#96CA85;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+    text-align: center;
+ 
 }

@@ -1,49 +1,14 @@
-h1 a{
-    color: black;    
-}
-
-a.nounderline:link   {   
-    text-decoration:none;   
-}
-
-.jumbotron {
-    text-align: center;
-    margin-bottom: 0px;
-    /* background: transparent; */
-    /* background-size: cover; */
-    background-image: url(../img/descarga.jpeg);
-    background-repeat: no-repeat;
-}
-
-a{
-    color: whitesmoke;
-    
-}
 .nav{
-    background-color: #F95763;
+    background-color: #7BBCFF;
     font-size: 2rem;
 }
 
-.sidebar {
-    width: 20%;
-    height:320px;
-    float:left;
-
-}
-.well {
-    width: 80%;
-    float:left;
-    text-align: justify;
-}
-
-.takenote-footer {
-    background: #7F807F;
-    position: relative;
-    margin: 0;
-    padding: 0.9rem 10px;
-    border-top: 0;
-    font-family: "Open Sans", sans-serif;
-    line-height: 1.5;
-    color: #747474;
+.nav li a {
+    background-color:#7BBCFF;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
     text-align: center;
+ 
 }

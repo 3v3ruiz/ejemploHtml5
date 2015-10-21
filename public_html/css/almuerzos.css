@@ -7,24 +7,6 @@ and open the template in the editor.
     Created on : 21-oct-2015, 9:40:56
     Author     : inftel06
 */
-
-.nav{
-    background-color:red;
-}
-
-.color{
-    background-color:white; //Mismo color que
-}
-
-.nav li:hover{
-    background-color:whitesmoke;
-}
-.nav-tabs.nav-justified > li > a {
-  margin-right: 0;
-  border-radius: 0px 0px 0 0;
-}
-
-
 /*@media (min-width: 768px) {
   .nav-tabs.nav-justified > li > a {
     border-bottom: 1px solid #ddd;
@@ -35,4 +17,20 @@ and open the template in the editor.
   .nav-tabs.nav-justified > .active > a:focus {
     border-bottom-color: #fff;
   }
-} */ 
+} */
+
+
+.nav{
+    background-color:#F95763;
+    text-decoration:none;
+}
+
+.nav li a {
+    background-color:#F95763;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+    text-align: center;
+ 
+}

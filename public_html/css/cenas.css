@@ -7,83 +7,21 @@ and open the template in the editor.
     Created on : 21-oct-2015, 9:41:10
     Author     : inftel05
 */
-h1 a{
-    color: black;    
-}
-
-a.nounderline:link   {   
-    text-decoration:none;   
-}
-
-
-.jumbotron {
-    text-align: center;
-    margin-bottom: 0px;
-    /* background: transparent; */
-    /* background-size: cover; */
-    background-image: url(../img/descarga.jpeg);
-    background-repeat: no-repeat;
-}
-
-a{
-    color: whitesmoke;
-    
-}
-
-.sidebar {
-    width: 20%;
-    height:320px;
-    float:left;
-
-}
-.well {
-    width: 80%;
-    float:left;
-}
-
-.takenote-footer {
-    background: #7F807F;
-    position: relative;
-    margin: 0;
-    padding: 0.9rem 10px;
-    border-top: 0;
-    font-family: "Open Sans", sans-serif;
-    line-height: 1.5;
-    color: #747474;
-    text-align: center;
-}
 
 .nav{
     background-color: GoldenRod ; 
     font-size: 2rem;
 }
 			
-ul, ol {
-        list-style:none;
-}
-
-
+					
 .nav li a {
-        background-color:GoldenRod;
-        color:#fff;
-        text-decoration:none;
-        padding:10px 12px;
-        display:block;
-        text-align: center;
+    background-color:GoldenRod;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+    text-align: center;
+ 
 }
 
-.nav li a:hover {
-        background-color:whitesmoke;
-        color: grey;
-}
 
-.nav li ul {
-        display:none;
-        position:absolute;
-        width:100%;
-        margin-left: 0px;
-}
-
-.nav li:hover > ul {
-        display:block;
-}
