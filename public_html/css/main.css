@@ -20,6 +20,7 @@ a.nounderline:link   {
     /* background-size: cover; */
     background-image: url(../img/descarga.jpeg);
     background-repeat: no-repeat;
+    background-size: 18% 60%;
 }
 
 a{
@@ -34,7 +35,7 @@ a{
 .sidebar {
     width: 20%;
     height:320px;
-    float:left;
+    float:left;;
 
 }
 .well {
@@ -86,7 +87,7 @@ ol, ul {
 }
 
 .nav li:hover > ul {
-        display:block;
+        display: list-item;
 }
 
 .nav li a {
