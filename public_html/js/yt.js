@@ -19,55 +19,56 @@ d+('<p class="timePosted">'+f[b].getAttribute("aria-label")+"</p>"))):a[b].inner
 (r?' target="_blank">':">")+'Reply</a><a href="https://twitter.com/intent/retweet?tweet_id='+m[b]+'" class="twitter_retweet_icon"'+(r?' target="_blank">':">")+'Retweet</a><a href="https://twitter.com/intent/favorite?tweet_id='+m[b]+'" class="twitter_fav_icon"'+(r?' target="_blank">':">")+"Favorite</a></p>");F&&void 0!==h[b]&&(l=h[b],void 0!==l?(l=l.innerHTML.match(/data-srcset="([A-z0-9%_\.-]+)/i)[0],l=decodeURIComponent(l).split('"')[1]):l=void 0,d+='<div class="media"><img src="'+l+'" alt="Image from tweet" /></div>');
 c.push(d);b++}if(null===A){a=c.length;g=0;f=document.getElementById(B);for(h="<ul>";g<a;)h+="<li>"+c[g]+"</li>",g++;f.innerHTML=h+"</ul>"}else A(c);x=!1;0<u.length&&(H.fetch(u[0]),u.splice(0,1))}};return window.twitterFetcher=H});
 
- var YT = 'undefined';
+var YT = 'undefined';
 
-// Helper function to display JavaScript value on HTML page.
+
 function showResponse(response) {
     YT = response;
-    // changed: namegiving
-    alert(YT.items[0].id.videoId);
-    //document.getElementById('VideoURL').value = YT.items[0].id.videoId;
+    //alert(YT.items[0].id.videoId);
+    
+    var cab = "https://www.youtube.com/embed/";
+    
+    //alert (YT.items[2].snippet[0].description.videoId);
+    
+    for (var i = 1; i<=4; i++) {
+        var res = cab.concat(YT.items[i-1].id.videoId);
+        var num_video = "video";
+        var elem = num_video.concat(i.toString());
+        document.getElementById(elem.toString()).src=res; 
+    }
       
 }
 
-// Called automatically when JavaScript client library is loaded.
-function onClientLoad() {
-    gapi.client.load('youtube', 'v3', onYouTubeApiLoad);
-    //search();    // changed.
-}
-
-// Called automatically when YouTube API interface is loaded (see line 9).
-function onYouTubeApiLoad() {
-    // This API key is intended for use only in this lesson.
-    // See http://goo.gl/PdPA1 to get a key for your own applications.
-    gapi.client.setApiKey('AIzaSyD49-XZ2JV7Rws3KDM2T7nA56Jbi-O7djY');
-}
-
 function search(prueba) {
-    // Use the JavaScript client library to create a search.list() API call.
-    /*var qVar = document.getElementById("artiest").value
-             + " - "
-             + document.getElementById("nummer").value;*/
-    // changed. added: type
-    qVar = prueba;
-    var request = gapi.client.youtube.search.list({
-        type: 'video',
-        part: 'id',
-        q: qVar
+    
+    gapi.client.setApiKey('AIzaSyCWzGO9Vo1eYOW4R4ooPdoFLmNk6zkc0Jw');
+    gapi.client.load('youtube', 'v3', function() {
+        qVar = prueba;
+       
+        var request = gapi.client.youtube.search.list({
+            type: 'video',
+            part: 'id',
+            q: qVar
+        },
+        {
+            type: 'video',
+            part: 'snippet',
+            q: qVar
+                
+        });
+        
+        request.execute(onSearchResponse);
+           
     });
-
-    // Send the request to the API server,
-    // and invoke onSearchRepsonse() with the response.
-    request.execute(onSearchResponse);
+       
 }
 
-// Called automatically with the response of the YouTube API request.
 function onSearchResponse(response) {
     showResponse(response);
 }
 
 var config5 = {
-  "id": '657162406603464706',
+  "id": '657499598894845952',
   "domId": 'example5',
   "maxTweets": 1,
   "enableLinks": false,
@@ -78,28 +79,12 @@ var config5 = {
   "customCallback": handleTweets,
   "showInteraction": false
 };
-var keyword;
+
 
 function handleTweets(tweets){
-  //var x = tweets.length;
-  //var n = 0;
-  //var element = document.getElementById('example5');
-  //var html = '<ul>';
-  //while(n < x) {
-    //html += '<li>' + tweets[n] + '</li>';
-    //tweet_res = tweets[0];
-    //alert ("pi");
+
     var key = extraer_keyword(tweets[0]);
     search(key);
-    //alert(keyword);
-    //alert(keyword);
-    
-    //alert(tweets[n]);
-    //n++;
-  //return tweets;
-  //html += '</ul>';
-  //element.innerHTML = html;
-    
 }
 
 function devuelvekeyword() {
@@ -110,8 +95,12 @@ function devuelvekeyword() {
 function extraer_keyword (miTweet) {
     
     var res = miTweet.split("#comidasana ");
-    res=res[1].split(" ");
-    return res[0];
+    res=res[1].split(".");
+    var receta = "Recetas de ";
+    var key = receta.concat(res[0]);
+    //document.getElementById("titulo-receta").innerHTML = key;
+    document.getElementById("titulo-receta").innerHTML = key;
+    
+    return key;
    
 }
-

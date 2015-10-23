@@ -35,12 +35,13 @@ a{
 
 .sidebar {
     width: 20%;
-    height:320px;
+    height:460px;
     float:left;;
 
 }
 .well {
     width: 80%;
+    heigh: 460px;
     float:left;
     text-align: center;
 }
@@ -104,4 +105,8 @@ ol, ul {
 p a:link {
     font-size: 1em;
     text-decoration:none; 
+}
+
+#titulo-receta {
+    font-size: 2em;
 }
