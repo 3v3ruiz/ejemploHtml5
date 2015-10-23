@@ -25,6 +25,7 @@ a.nounderline:link   {
 
 a{
     color: whitesmoke;
+ 
         
 }
 .nav{
@@ -41,7 +42,7 @@ a{
 .well {
     width: 80%;
     float:left;
-    text-align: justify;
+    text-align: center;
 }
 
 .takenote-footer {
@@ -98,4 +99,9 @@ ol, ul {
     display:block;
     text-align: center;
  
+}
+
+p a:link {
+    font-size: 1em;
+    text-decoration:none; 
 }

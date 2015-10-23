@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> 
+
+<html> <!--<![endif]-->
+    <head>
+        <link rel="shortcut icon" type="image/icon" href="img/corazon.ico" >
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="stylesheet" href="css/main.css">
+        <link href="css/recetas-texto.css" rel="stylesheet" type="text/css"/>
+        
+        <script src="js/twitterFetcher_min.js" type="text/javascript"></script>
+        
+        <script>
+            
+            var config = {
+                "id": '657162406603464706',
+                "domId": '',
+                "maxTweets": 1,
+                "enableLinks": false,
+                "showUser": false,
+                "showTime": false,
+                "dateFunction": '',
+                "showRetweet": false,
+                "customCallback": handleTweets,
+                "showInteraction": false
+            };
+            twitterFetcher.fetch(config);
+            
+            function handleTweets(tweets){
+                var x = tweets.length;
+                var n = 0;
+                //var element = document.getElementById('example5');
+                //var html = '<ul>';
+                while(n < x) {
+                  //html += '<li>' + tweets[n] + '</li>';
+                  alert(tweets[n]);
+                  n++;
+                }
+                //html += '</ul>';
+                //element.innerHTML = html;
+            }
+
+            
+                        
+        </script>
+           
+        <title> Almuerzos - Comida sana </title>
+        
+    </head>
+    
+    
+    <body>
+        
+        <div class="container">
+            
+            <header> 
+
+              
+                <div class="jumbotron">
+                    
+                    <h1><a href="index.html" class="nounderline" >Comida sanísimaaaaa</a></h1>      
+                    <p>Consejos prácticos y muy sencillos para seguir una dieta equilibrada, variada y beneficiosa para la salud</p>
+                    
+                </div>
+                
+            </header>
+            
+        </div>
+       
+
+        <div class="container">
+            <nav>
+                <ul class="nav nav-tabs nav-justified ">
+                    <li role="presentation"> <a href="videos-recetas.html"> Recetas en vídeos</a> </li>
+                    <li role="presentation" class="active"> <a href="#"> Recetas en texto </a> </li>
+                 </ul> 
+
+            </nav>
+        </div>
+    
+        <div class="container">
+            
+            <section class="well">
+                
+            </section>
+          
+            <aside class="sidebar">
+                
+                <a class="twitter-timeline" href="https://twitter.com/comidasanisima" data-widget-id="657162406603464706">Tweets by @comidasanisima</a> 
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            
+            </aside>
+            
+        </div>
+    
+        <div class="container">
+            <footer class= "takenote-footer clearfix">
+
+                <section>
+                     <p> <a href="formulario.html"> Contacta con nosotros </a> </p>
+                </section>
+            
+            </footer>
+          
+           
+        </div>
+  
+    </body>
+</html>
